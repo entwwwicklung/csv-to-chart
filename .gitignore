@@ -1,0 +1,10 @@
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+engine/__pycache__
+engine/dist
+engine/build
+dist
+assets/

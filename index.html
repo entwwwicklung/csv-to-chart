@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!--
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  -->
+  <title>CSV to chart</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<!-- Welcome caption -->
+<div id="welcome-caption">
+  <img src="assets/csv.png" class="csv-image text-center">
+  <h1 id="info-message" class="text-center pt-2">Drag and drop .csv file here</h1>
+</div>
+<div id="main-container" class="container-fluid">
+  <canvas id="bar-chart"></canvas>
+  <div class="d-flex align-items-center justify-content-end">
+    <button id="change-color" class="btn btn-sm btn-purple">Change color</button>
+    <button id="back-button" class="btn btn-sm btn-info ml-2">Back</button>
+  </div>
+</div>
+<small id="copyright" class="text-muted">Created by Entwicklung</small>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+</html>
